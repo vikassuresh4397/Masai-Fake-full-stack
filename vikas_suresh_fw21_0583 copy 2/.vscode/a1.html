@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../attractive-songs-1315/styles/navbar.css">
+    <link rel="stylesheet" href="../attractive-songs-1315/styles/login.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+
+</head>
+
+<style>
+    #navbar3{
+       border: 1px solid red;
+      }
+
+      #container{
+       border: 5px solid green;
+       height: auto;
+       display:flex;
+      }
+
+      #left{
+       border: 5px solid yellow;
+       width:18%;
+      }
+
+       #right{
+       border: 5px solid red;
+       width : 80%
+      } 
+
+      #carosel{
+       border: 5px solid green;
+       /* height: 200px; */
+      }
+
+      #down{
+       border: 5px solid blue;
+       height: auto;
+      }
+
+      #filterby{
+       border: 5px solid green;
+       height:50px;
+       display: flex;
+       padding:5px;
+      }
+      #filter{
+       /* border: 1px solid black; */
+       width:15%;
+       margin:auto;
+       justify-content: space-between;
+      }
+      #producttype{
+       /* border: 1px solid black; */
+       margin:auto;
+       width:25%;
+      }
+      #fragrancename{
+       /* border: 1px solid black; */
+       margin:auto;
+       width:25%;
+      }
+      #fragrancecategory{
+       /* border: 1px solid black; */
+       margin:auto;
+       width:25%;
+      }
+      #sortby{
+       /* border: 1px solid black; */
+       margin:auto;
+       width:100%
+      }
+
+      #filterleft{
+       display:flex;
+       width:85%;
+       /* border: 1px solid black; */
+      }
+      #filterright{
+       /* border: 1px solid black; */
+      display: flex;
+      margin-left:5%;
+      width:15%
+      }
+     .underline{
+       border:2px solid #333333;
+     }
+     select{
+       border:white;
+       font-size: 12px;
+       width:100%;
+     }
+     #container1{
+       text-align: center;
+       display: grid;
+       grid-template-columns: repeat(4,1fr);
+      gap:20px;  
+   
+   }
+
+     #container1>div{
+       gap:0;
+       /* border:1px solid violet */
+         
+   }
+     #container1>div>img{
+      width:40%;
+      height:300px;
+      
+     }
+     #container1>div>p:nth-child(2){
+       /* border: 1px solid black; */
+       height:1px;
+       color:#525699;
+     }
+     #container1>div>p:nth-child(3){
+       /* border: 1px solid black; */
+       height:40px;
+       color: grey;
+     }
+     #container1>div>p:nth-child(4){
+       /* border: 1px solid black; */
+       height:40px;
+       margin-top: -15px;
+       color:grey;
+     }
+     #container1>div>p:nth-child(5){
+       /* border: 1px solid black; */
+       height:40px;
+       margin-top: -15px;
+       color: black;
+     }
+     #container1>div>p:nth-child(6){
+       /* border: 1px solid black; */
+       height:40px;
+       margin-top: -35px;
+     }
+     #container1>div>p:nth-child(7){
+       /* border: 1px solid black; */
+       height:40px;
+       margin-top: -15px;
+     }
+
+     #container1>div>button{
+       width:100%;
+       height:50px;
+       font-size: 15px;
+       color:white;
+       background-color: #000000;
+
+     }
+
+     #a1{
+        /* border: 1px solid blue; */
+        font-size: 15px;
+        display: flex;
+     }
+    #home{
+        font-size: 12px;
+    }
+    #a2{
+        /* border: 1px solid blue; */
+        margin-top: 40px;
+        font-size: 15px;
+    }
+
+    #b1{
+        /* border: 1px solid red;  */
+    }
+
+    .p{
+        /* border: 1px solid red;  */
+        width:80%;
+        color: grey;
+    }
+
+    #filterleft{
+        background-color: #AAAAAA;
+    }
+    #producttype>select{
+        background-color: #AAAAAA;
+    }
+    #fragrancename>select{
+        background-color: #AAAAAA;
+    }
+    
+    #fragrancecategory>select{
+        background-color: #AAAAAA;
+    }
+    
+    #container1>div{
+        margin-top:40px;
+    }
+
+    #carosel>img{
+        width:100%;
+        
+    }
+</style>
+
+<body>
+    
+    <div id="navbar3"></div>
+    <div id="container">
+     <div id="left">
+        <div id="home"><a href="https://www.bathandbodyworks.com/">HOME</a> / BODY CARE</div>
+         <div id="a2">
+            <h4>TOP OFFERS</h4>
+            <div class="b1">
+                <p class="p">Buy 3, Get 1 FREE All Full-Size Body Care</p>
+                <p class="p">2/$10, 4/$18, 6/$24 Shea Butter Cleansing Bars</p>
+                <p class="p">Buy 3, Get 1 FREE Travel, Hand & Lip Care</p>
+            </div>
+         </div>
+         <div id="a2">
+            <h4>BATH & SHOWER</h4>
+            <div class="b1">
+                <p class="p">All Bath & Shower</p>
+                <p class="p">Body Wash & Shower Gel</p>
+                <p class="p">Body Scrub</p>
+            </div>
+         </div>
+
+         <div id="a2">
+            <h4>MOISTURIZERS</h4>
+            <div class="b1">
+                <p class="p">All Moisturizers</p>
+                <p class="p"> Body Lotion</p>
+                <p class="p">Body Cream</p>
+            </div>
+         </div>
+
+         <div id="a2">
+            <h4>FRAGRANCE</h4>
+            <div class="b1">
+                <p class="p"> All Fragrance</p>
+                <p class="p"> Body Sprays & Mists</p>
+                <p class="p">Perfume & Cologne</p>
+            </div>
+         </div>
+
+         <div id="a2">
+            <h4>NEW & NOW
+               </h4>
+            <div class="b1">
+                <p class="p">All Aromatherapy</p>
+    
+            </div>
+         </div>
+        
+     </div>
+
+     <div id="right">
+        
+        <div id="down">
+            <h3>All Body Care</h3>
+            <div id="filterby">
+                <div id="filterleft">
+                    <div id="filter">Filter By:</div>
+                    <div id="producttype"><select name="" id="type">
+                        <option value="">PRODUCT TYPE</option>
+                        <option value="body_wash">Body Wash</option>
+                        <option value="body_cream">Body Cream</option>
+                        <option value="body_spray">Body Spray</option>
+                    </select>
+                    <div class="underline"></div></div>
+                   
+                    <div id="fragrancename">
+                        <select name="" id="fragrancetype">
+                            <option value="">FRAGRANCE CATEGORY</option>
+                            <option value="after_dark">After Dark</option>
+                            <option value="black_tie">Black Tie</option>
+                            <option value="classic_flannel">Classic Flannel</option>
+                            <option value="dream_bright">Dream Bright</option>
+                            <option value="eucalyptus_lavender">Eucalyptus Lavender</option>
+                            <option value="mist">Fine Fragrance Mist</option>
+                            <option value="snowball">Frostes Cocunut Snowball</option>
+                            <option value="japanese">Japanese Cherry Blossom</option>
+                         
+                            <option value="snowflakes">Snowflakes & Cashmere</option>
+                            <option value="straberry">Strawberry Showflakes</option>
+                            <option value="teakwood">Teakwood</option>
+                            <option value="bean">Vanilla Bean Noel</option>
+                            <option value="mocha">Vanilla Mocha Martini</option>
+                            <option value="candy">Winter Candy Apple</option>
+                            <option value="berry">Winterberry Wonder</option>
+                           
+
+                        </select>
+                        <div class="underline"></div>
+                    </div>
+                    <div id="fragrancecategory">
+                        <select name="" id="cato">
+                            <option value="">FRAGRANCE CATEGORY</option>
+                            <option value="Floral">Floral</option>
+                            <option value="Sweet">Sweet</option>
+                            <option value="Fresh">Fresh</option>
+                        </select>
+                        <div class="underline"></div>
+                    </div>
+                </div>
+                <div id="filterright"><div id="sortby">
+                    <select name="" id="sorting">
+                    <option value="">Sort</option>
+                    <option value="b">LowToHigh</option>
+                    <option value="c">HighToLow</option>
+                </select><div class="underline"></div></div></div>
+                
+            </div>
+            <div id="container1"></div>
+        </div>
+    </div>
+   </div>
+
+<div id="footer"></div>
+
+
+</body>
+</html>
+
+<script type="module" src="./scripts/bodycare.js"></script>
+<script type="module" src="./scripts/login.js"></script>
+
+<script src="https://kit.fontawesome.com/24c494a6b6.js"
+     crossorigin="anonymous"></script>
+
+
+    
+     
+
+
+
+
+
+
+     ...........................................................................................................................
+
+
+
+
+
+
+     
+
+     
+import {navbar} from "../components/navbar.js";
+
+let navbar_div= document.getElementById("navbar3");
+
+navbar_div.innerHTML=navbar();
+
+import {footer} from "../components/footer.js";
+let footer_div = document.getElementById("footer");
+footer_div.innerHTML=footer();
+   
+  
+
+
+
+   var data = [
+       {   
+           id : 1,
+           image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4b491d20/crop/026535136_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+           currentstatus : "New Fragrance",
+           name : "Dream Bright",
+           text : "Fine Fragrance Mist",
+           price : 17.50,
+           extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
+           details : "Body Spray",
+           category : "Floral",
+       },
+       {   
+           id : 2,
+           image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw0580616f/crop/026551380_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+           currentstatus : "New Fragrance",
+           name : "After Dark",
+           text : "3-in-1 Hair, Face & Face & Body Wash",
+           price : 14.50,
+           extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
+           details : "Body Wash",
+           category : "Sweet",
+       },
+       {   
+           id : 3,
+           image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8ab78bd7/crop/026539029_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+           currentstatus : "New Fragrance",
+           name : "Vanilla Bean Noel",
+           text : "Ultimate Hydration Body Cream",
+           price : 16.50,
+           extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
+           details : "Body Cream",
+           category : "Floral",
+       },
+       {   
+           id : 4,
+           image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb39e72d8/crop/026567998_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+           currentstatus : "New!",
+           name : "Eucalyptus Lavender",
+           text : "Body Wash and Foam Bath",
+           price : 15.50,
+           extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
+           details : "Body Wash",
+           category : "Sweet",
+       },
+       {   
+           id : 5,
+           image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw66ce122a/hires/026559301_alt_1.jpg?sh=413&yocs=o_s_",
+           currentstatus : "New!",
+           name : "Strawberry Showflakes",
+           text : "Shower Gel",
+           price : 14.50,
+           extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
+           details : "Body Wash",
+           category : "Floral",
+       },
+       {   
+           id : 6,
+           image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4bbac15d/crop/026557579_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+           currentstatus : "New!",
+           name : "Snowflakes & Cashmere",
+           text : "Fine Fragrance Mist",
+           price : 16.50,
+           extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
+           details : "Body Spray",
+           category : "Sweet",
+       },
+       {   
+           id : 7,
+           image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7a23c1cb/crop/026557573_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+           currentstatus : "New!",
+           name : "Frostes Cocunut Snowball",
+           text : "Daily Nourishing Body Lotion",
+           price : 14.50,
+           extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
+           details : "Body Cream",
+           category : "Sweet",
+       },
+       {   
+           id : 8,
+           image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw67bdae98/crop/026398463_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+           currentstatus : "New!",
+           name : "Black Tie",
+           text : "Body Spray",
+           price : 14.50,
+           extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
+           details : "Body Spray",
+           category : "Fresh",
+       },
+       {   
+           id : 9,
+           image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2f7f9dab/crop/026480833_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=s_", 
+           currentstatus : "New!",
+           name : "Winter Candy Apple",
+           text : "Ultimate Hydration Body Cream",
+           price : 16.50,
+           extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
+           details : "Body Cream",
+           category : "Sweet",
+       },
+       {   
+           id : 10,
+           image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw81522767/crop/026401914_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=s_",   currentstatus : "New!",
+           name : "Winterberry Wonder",
+           text : "Shower Gel",
+           price : 13.50,
+           extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
+           details : "Body Wash",
+           category : "Fresh",
+       },
+       {   
+           id : 11,
+           image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwda910a0d/crop/026569109_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+           currentstatus : "New!",
+           name : "Vanilla Mocha Martini",
+           text : "Fine Fragrance Mist",
+           price : 17.50,
+           extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
+           details : "Body Spray",
+           category : "Sweet",
+       },
+       {   
+           id : 12,
+           image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw40d245c7/crop/026553502_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+           currentstatus : "Online Exclusive",
+           name : "Classic Flannel",
+           text : "3-in-1 Hair, Face & Face & Body Wash",
+           price : 14.50,
+           extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
+           details : "Body Wash",
+           category : "Fresh",
+       },
+       {   
+           id : 13,
+           image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd12c9066/hires/026558225_alt_1.jpg?sh=413&yocs=s_",
+           currentstatus : "New!",
+           name : "Winter Candy Apple",
+           text : "Fine Fragrance Mist",
+           price : 16.50,
+           extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
+           details : "Body Spray",
+           category : "Sweet",
+       },
+       {   
+           id : 14,
+           image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5baf2a80/crop/026539030_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=s_",
+           currentstatus : "New!",
+           name : "Winter Candy Apple",
+           text : "Ultimate Hydration Body Cream",
+           price : 16.50,
+           extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
+           details : "Body Cream",
+           category : "Fresh",
+       },
+       {   
+           id : 15,
+           image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9285085c/crop/026557566_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=s_",
+           currentstatus : "New!",
+           name : "Winterberry Wonder",
+           text : "Shower Gel",
+           price : 13.50,
+           extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
+           details : "Body Wash",
+           category : "Sweet",
+       },
+       {   
+           id : 16,
+           image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc82289e5/hires/026569107_alt_1.jpg?sh=413&yocs=s_",
+           currentstatus : "New!",
+           name : "Vanilla Mocha MArtini",
+           text : "Fine Fragrance Mist",
+           price : 17.50,
+           extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
+           details : "Body Spray",
+           category : "Fresh",
+       },
+       {   
+           id : 17,
+           image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6c3d8902/crop/026553500_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=s_",
+           currentstatus : "Online Exclusive",
+           name : "Winter Candy Apple",
+           text : "3-in-1 Hair, Face & Face & Body Wash",
+           price : 14.50,
+           extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
+           details : "Body Spray",
+           category : "Sweet",
+       },
+       {   
+           id : 18,
+           image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb1006457/crop/026354084_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=s_",    
+           currentstatus : "Online Exclusive",
+           name : "Japanese Cherry Blossom",
+           text : "Daily Nourishing Body Lotion",
+           price : 14.50,
+           extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
+           details : "Body Cream",
+           category : "Fresh",
+       },
+       {   
+           id : 19,
+           image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw76e724ed/crop/026295921_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=s_",  
+           currentstatus : "Online Exclusive",
+           name : "Teakwood",
+           text : "Ultimate Hydration Body Cream",
+           price : 16.50,
+           extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
+           details : "Body Cream",
+           category : "Fresh",
+       },
+       {   
+           id : 20,
+           image : "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.219/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7ac01f32/crop/026353250_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=s_",   
+           currentstatus : "Online Exclusive",
+           name : "Eucaplytus Spearmint",
+           text : "Body and Massage Oil",
+           price : 18.50,
+           extratext : "Mix & match Full-Size: Buy 3, Get 1 FREE",  
+           details : "Body Oil",
+           category : "Fresh",
+       }
+   ];
+   
+   let body=document.getElementById("container1");
+   
+   function append(data){
+       body.innerHTML = null;
+       data.forEach(function (el, id) {
+           let tr = document.createElement('div');
+   
+   let td1 = document.createElement('img');
+   td1.src = el.image;
+   
+   let td2 = document.createElement('p');
+   td2.innerHTML = el.currentstatus;
+   
+   let td3 = document.createElement('h3');
+   td3.innerHTML = el.name;
+   
+   let td4 = document.createElement('p');
+   td4.innerHTML = el.text;
+   
+   let td5 = document.createElement('p');
+   td5.innerHTML = `$${el.price}`;
+   
+   let td6 = document.createElement('p');
+   td6.innerHTML = el.extratext;
+   
+   let td7 = document.createElement('button');
+   td7.textContent = "Add To Card";
+   
+   tr.append(td1,td1,td2,td3,td4,td5,td6,td7);
+       body.append(tr);
+       });
+   };
+   
+    append(data);
+   
+   let type_btn= document.getElementById("type");
+   let type_fragrance=document.getElementById("fragrancetype");
+   let cate=document.getElementById("cato");
+   let short=document.getElementById("sorting");
+   // type_btn.onchange=() => {
+   //     producttype();
+   // };
+   type_fragrance.addEventListener("change",fragrancetypo)
+   type_btn.addEventListener("change",producttype);
+   cate.addEventListener("change",catee);
+   short.addEventListener("change",shorting);
+   
+   
+   function shorting(){
+      let increasing=short.value;
+      if(increasing=="b"){
+       data.sort(function(a,b){
+           return a.price-b.price;
+       });
+       console.log(data);
+       append(data);
+      }else if(increasing=="c"){
+       data.sort(function(a,b){
+           return b.price-a.price;
+       });
+       append(data);
+      }
+   }
+   
+   
+   function catee(){
+      let kato=cate.value;
+      if(kato=="Floral"){
+       let x= data.filter(function(el,i){
+           return el.category == "Floral";
+       });
+       append(x);
+      }
+      else if(kato=="Sweet"){
+       let x= data.filter(function(el,i){
+           return el.category == "Sweet";
+       });
+       append(x);
+      }
+      else if(kato=="Fresh"){
+       let x= data.filter(function(el,i){
+           return el.category == "Fresh";
+       });
+       append(x);
+      }
+   }
+   
+   function fragrancetypo(){
+       // console.log("yes")
+       let type_boom=type_fragrance.value;
+   
+       if(type_boom=="after_dark"){
+            let x= data.filter(function(el,i){
+           return el.name == "After Dark";
+   
+           
+           
+       });
+       append(x);
+   
+       }else if(type_boom=="black_tie"){
+       let x= data.filter(function(el,i){
+      return el.name == "Black Tie";
+   
+     
+      
+   });
+   append(x);
+   
+   }else if(type_boom=="classic_flannel"){
+       let x= data.filter(function(el,i){
+      return el.name == "Classic Flannel";
+   
+     
+      
+   });
+   append(x);
+   
+   }else if(type_boom=="dream_bright"){
+       let x= data.filter(function(el,i){
+      return el.name == "Dream Bright";
+   
+     
+      
+   });
+   append(x);
+   
+   }else if(type_boom=="eucalyptus_lavender"){
+       let x= data.filter(function(el,i){
+      return el.name == "Eucalyptus Lavender";
+   
+     
+      
+   });
+   append(x);
+   
+   }else if(type_boom=="snowball"){
+       let x= data.filter(function(el,i){
+      return el.name == "Frostes Cocunut Snowball";
+   
+     
+      
+   });
+   append(x);
+   
+   }else if(type_boom=="japanese"){
+       let x= data.filter(function(el,i){
+      return el.name == "Japanese Cherry Blossom";
+   
+     
+      
+   });
+   append(x);
+   
+   }else if(type_boom=="snowflakes"){
+       let x= data.filter(function(el,i){
+      return el.name == "Snowflakes & Cashmere";
+   
+     
+      
+   });
+   append(x);
+   
+   }else if(type_boom=="strawberry"){
+       let x= data.filter(function(el,i){
+      return el.name == "Strawberry Showflakes";
+   
+     
+      
+   });
+   append(x);
+   
+   }else if(type_boom=="teakwood"){
+       let x= data.filter(function(el,i){
+      return el.name == "Teakwood";
+   
+     
+      
+   });
+   append(x);
+   
+   }else if(type_boom=="bean"){
+       let x= data.filter(function(el,i){
+      return el.name == "Vanilla Bean Noel";
+   
+     
+      
+   });
+   append(x);
+   
+   }else if(type_boom=="mocha"){
+       let x= data.filter(function(el,i){
+      return el.name == "Vanilla Mocha Martini";
+   
+     
+      
+   });
+   append(x);
+   
+   }else if(type_boom=="candy"){
+       let x= data.filter(function(el,i){
+      return el.name == "Winter Candy Apple";
+   
+     
+      
+   });
+   append(x);
+   
+   }else if(type_boom=="berry"){
+       let x= data.filter(function(el,i){
+      return el.name == "Winterberry Wonder";
+   
+     
+      
+   });
+   append(x);
+   
+   }
+   
+   
+       
+       
+       
+    }
+   
+    function producttype(){
+       let type_value=type_btn.value;
+   
+       if(type_value=="body_wash"){
+            let x= data.filter(function(el,i){
+           return el.details == "Body Wash";
+   
+           // if(el.details == "Body Wash"){
+           //     return ;
+           // }
+           
+       });
+       append(x);
+   
+       }else if(type_value=="body_cream"){
+            let x= data.filter(function(el,i){
+           return el.details == "Body Cream";
+   
+           // if(el.details == "Body Wash"){
+           //     return ;
+           // }
+           
+       });
+       append(x);
+   
+       }else if(type_value=="body_spray"){
+            let x= data.filter(function(el,i){
+           return el.details == "Body Spray";
+   
+           // if(el.details == "Body Wash"){
+           //     return ;
+           // }
+           
+       });
+       append(x);
+   
+       }
+   
+       
+       
+    }
+
+
